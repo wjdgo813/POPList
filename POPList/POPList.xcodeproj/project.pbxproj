@@ -24,6 +24,8 @@
 		A1C862E220F207B10053907F /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1C862DE20F207B10053907F /* 0.jpg */; };
 		A1C862E520F20AF80053907F /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C862E420F20AF80053907F /* TimelineTableViewCell.swift */; };
 		A1C862E720F20DC00053907F /* CanShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C862E620F20DC00053907F /* CanShowDetail.swift */; };
+		A1C862E920F212C60053907F /* MediaContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C862E820F212C60053907F /* MediaContainer.swift */; };
+		A1C862EB20F213490053907F /* ContentPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C862EA20F213490053907F /* ContentPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		A1C862DE20F207B10053907F /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		A1C862E420F20AF80053907F /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		A1C862E620F20DC00053907F /* CanShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanShowDetail.swift; sourceTree = "<group>"; };
+		A1C862E820F212C60053907F /* MediaContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContainer.swift; sourceTree = "<group>"; };
+		A1C862EA20F213490053907F /* ContentPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 			children = (
 				A1C862D120F205580053907F /* ContainContents.swift */,
 				A1C862E620F20DC00053907F /* CanShowDetail.swift */,
+				A1C862E820F212C60053907F /* MediaContainer.swift */,
+				A1C862EA20F213490053907F /* ContentPresentable.swift */,
 			);
 			path = ProtocolExtension;
 			sourceTree = "<group>";
@@ -353,7 +359,9 @@
 				A1C862E720F20DC00053907F /* CanShowDetail.swift in Sources */,
 				A1C862A020F200560053907F /* AppDelegate.swift in Sources */,
 				A1C862D520F205A40053907F /* TimelineContents.swift in Sources */,
+				A1C862EB20F213490053907F /* ContentPresentable.swift in Sources */,
 				A1C862D720F206130053907F /* Content.swift in Sources */,
+				A1C862E920F212C60053907F /* MediaContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

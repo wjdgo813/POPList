@@ -7,19 +7,30 @@
 //
 
 import UIKit
+import AVFoundation
 
-class TimelineTableViewCell: UITableViewCell {
+class TimelineTableViewCell: UITableViewCell,MediaContainer {
+    lazy var note: UILabel = UILabel()
+    lazy var videoLayer: AVPlayerLayer = AVPlayerLayer()
+    lazy var mediaImageView: UIImageView = UIImageView()
     
-    var content : Content?
+    var content : Content? {
+        didSet{
+            self.contentChanged()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
     
     init(style: UITableViewCellStyle, reuseIdentifier: String?, content: Content) {
         self.content = content
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        contentChanged()
+        
         
     }
     
