@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class TimelineTableViewCell: UITableViewCell,MediaContainer {
     lazy var note: UILabel = UILabel()
     lazy var videoLayer: AVPlayerLayer = AVPlayerLayer()
