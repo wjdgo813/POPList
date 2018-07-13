@@ -32,6 +32,25 @@ class TimelineTableViewCell: UITableViewCell,MediaContainer {
         
         contentChanged()
         
+        let cellHeight : CGFloat = 80
+        let mediaRect : CGRect = CGRect(x: 5, y: 5, width: cellHeight - 10, height: cellHeight - 10)
+        mediaImageView.layout(in: mediaRect)
+        videoLayer.layout(in: mediaRect)
+        
+        mediaImageView.contentMode = UIViewContentMode.scaleAspectFit
+        self.addSubview(mediaImageView)
+        self.layer.addSublayer(videoLayer)
+        
+        var noteRect : CGRect = self.bounds
+        noteRect.origin.x = mediaRect.size.width + 10
+        noteRect.size.width -= noteRect.origin.x
+        noteRect.size.height = cellHeight
+        
+        note.layout(in: noteRect)
+        
+        self.addSubview(note)
+        
+        
         
     }
     
