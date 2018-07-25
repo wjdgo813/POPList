@@ -59,12 +59,12 @@ extension MediaContainer{
     var media : ContentPresentable {
         get{
             switch content?.type {
-            case .image:
+            case .image?:
                 return mediaImageView
-            case .vod:
+            case .vod?:
                 return videoLayer
-            default:
-                break
+            case .none:
+                return mediaImageView
             }
         }
     }
