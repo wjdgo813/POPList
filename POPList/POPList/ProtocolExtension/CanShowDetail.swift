@@ -16,6 +16,6 @@ protocol CanShowDetail {
 
 extension CanShowDetail{
     func showDetailView(content:Content){
-        
+        //
     }
 }
